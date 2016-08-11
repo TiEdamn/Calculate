@@ -1,0 +1,141 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="js/jquery.js"></script>
+    <style>
+        .none-display{
+            display: none;
+        }
+        .base-function{
+            float:left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form class="wg-calc">
+        <div class="sitetype">
+            <h4>Тип сайта</h4>
+            <input type="radio" name="sitetype" value="300" data="visit" id="sitetype-visit" checked /><label for="sitetype-visit">Визитка</label><br />
+            <input type="radio" name="sitetype" value="400" data="catalog" id="sitetype-catalog" /><label for="sitetype-catalog">Каталог</label><br />
+            <input type="radio" name="sitetype" value="450" data="coorp" id="sitetype-coorp"/><label for="sitetype-coorp">Корпоративный</label><br />
+            <input type="radio" name="sitetype" value="500" data="shop" id="sitetype-shop"/><label for="sitetype-shop">Магазин</label><br />
+        </div>
+        <div class="sitedesing">
+            <h4>Дизайн</h4>
+            <input type="radio" name="sitedesing" value="0" id="sitedesing-type" checked /><label for="sitedesing-type">Типовой</label><br />
+            <input type="radio" name="sitedesing" value="100" id="sitedesing-add-type"/><label for="sitedesing-add-type">Доработанный</label><br />
+            <input type="radio" name="sitedesing" value="500" id="sitedesing-uniq"/><label for="sitedesing-uniq">Уникальный</label><br />
+        </div>
+        <div class="base-function">
+            <div class="visit none-display base">
+                <h4>Базовый функционал визитки</h4>
+                <input type="checkbox" name="base" value="0" id="base-function-1" checked disabled /><label for="base-function-1">Функция 1</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-2" checked disabled /><label for="base-function-2">Функция 2</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-3" checked disabled /><label for="base-function-3">Функция 3</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-4" checked disabled /><label for="base-function-4">Функция 4</label><br />
+            </div>
+            <div class="catalog none-display base">
+                <h4>Базовый функционал каталога</h4>
+                <input type="checkbox" name="base" value="0" id="base-function-5" checked disabled /><label for="base-function-5">Функция 1</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-6" checked disabled /><label for="base-function-6">Функция 2</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-7" checked disabled /><label for="base-function-7">Функция 3</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-8" checked disabled /><label for="base-function-8">Функция 4</label><br />
+            </div>
+            <div class="coorp none-display base">
+                <h4>Базовый функционал корпоративного</h4>
+                <input type="checkbox" name="base" value="0" id="base-function-9" checked disabled /><label for="base-function-9">Функция 1</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-10" checked disabled /><label for="base-function-10">Функция 2</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-11" checked disabled /><label for="base-function-11">Функция 3</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-12" checked disabled /><label for="base-function-12">Функция 4</label><br />
+            </div>
+            <div class="shop none-display base">
+                <h4>Базовый функционал магазина</h4>
+                <input type="checkbox" name="base" value="0" id="base-function-13" checked disabled /><label for="base-function-13">Функция 1</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-14" checked disabled /><label for="base-function-14">Функция 2</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-15" checked disabled /><label for="base-function-15">Функция 3</label><br />
+                <input type="checkbox" name="base" value="0" id="base-function-16" checked disabled /><label for="base-function-16">Функция 4</label><br />
+            </div>
+        </div>
+        <div class="add-function">
+            <div class="visit none-display add">
+                <h4>Дополнительный функционал визитки</h4>
+                <input type="checkbox" name="add" value="10" id="add-function-1" /><label for="add-function-1">Функция 1</label><br />
+                <input type="checkbox" name="add" value="20" id="add-function-2" /><label for="add-function-2">Функция 2</label><br />
+                <input type="checkbox" name="add" value="30" id="add-function-3" /><label for="add-function-3">Функция 3</label><br />
+                <input type="checkbox" name="add" value="40" id="add-function-4" /><label for="add-function-4">Функция 4</label><br />
+            </div>
+            <div class="catalog none-display add">
+                <h4>Дополнительный функционал каталога</h4>
+                <input type="checkbox" name="add" value="10" id="add-function-5" /><label for="add-function-5">Функция 1</label><br />
+                <input type="checkbox" name="add" value="20" id="add-function-6" /><label for="add-function-6">Функция 2</label><br />
+                <input type="checkbox" name="add" value="30" id="add-function-7" /><label for="add-function-7">Функция 3</label><br />
+                <input type="checkbox" name="add" value="40" id="add-function-8" /><label for="add-function-8">Функция 4</label><br />
+            </div>
+            <div class="coorp none-display add">
+                <h4>Дополнительный функционал корпоративного</h4>
+                <input type="checkbox" name="add" value="10" id="add-function-9" /><label for="add-function-9">Функция 1</label><br />
+                <input type="checkbox" name="add" value="20" id="add-function-10" /><label for="add-function-10">Функция 2</label><br />
+                <input type="checkbox" name="add" value="30" id="add-function-11" /><label for="add-function-11">Функция 3</label><br />
+                <input type="checkbox" name="add" value="40" id="add-function-12" /><label for="add-function-12">Функция 4</label><br />
+            </div>
+            <div class="shop none-display add">
+                <h4>Дополнительный функционал магазина</h4>
+                <input type="checkbox" name="add" value="10" id="add-function-13" /><label for="add-function-13">Функция 1</label><br />
+                <input type="checkbox" name="add" value="20" id="add-function-14" /><label for="add-function-14">Функция 2</label><br />
+                <input type="checkbox" name="add" value="30" id="add-function-15" /><label for="add-function-15">Функция 3</label><br />
+                <input type="checkbox" name="add" value="40" id="add-function-16" /><label for="add-function-16">Функция 4</label><br />
+            </div>
+        </div>
+        <div class="sitefilling">
+            <h4>Наполнение сайта</h4>
+            <label for="simplefill">Простое наполнение </label><input type="text" name="simplefill" id="simplefill" value="" data="0.5"/> страниц<br />
+            <label for="complexfill">Сложное наполнение </label><input type="text" name="complexfill" id="complexfill" value="" data="1"/> страниц<br />
+        </div>
+        <h4>Цена</h4>
+        <input type="text" id="cost" name="cost" value="" disabled /><br />
+        <textarea id="needs" name="needs" disabled></textarea>
+    </form>
+<script>
+          $( ".wg-calc .sitetype input" ).change(function() {
+                $(".base").addClass("none-display");
+                $(".add").addClass("none-display");
+                $(".add input").prop('checked', false);
+                actclass = $( ".wg-calc .sitetype input:checked" ).attr("data");
+                actclass = "."+actclass;
+                $(actclass).removeClass("none-display");
+                
+          }).change();
+          $( ".wg-calc input" ).change(function() {
+                var count = 0;
+                var parsecount, getid, actclass;
+                //var course = 10500; /* Стоимость в рублях */
+                var course; /* Стоимость в валюте */
+                var getinfo = "";
+                $( ".wg-calc input:checked" ).each(function(){
+                    count += parseInt($(this).val());
+                    if(!$(this).attr('disabled')){
+                        getinfo += $('label[for='+$(this).attr('id')+']').text()+", ";
+                    }
+                });
+                $(".sitefilling input").each(function(){
+                    if($(this).val()){
+                        count += parseInt($(this).val()) * parseFloat($(this).attr("data"));
+                        getinfo += $('label[for='+$(this).attr('id')+']').text() +": "+$(this).val()+", ";
+                    }
+                });
+                if(course){
+                    count*=course;
+                    parsecount = count+"";
+                    parsecount = parsecount.replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g,"\$1 ");
+                    $("#cost").val(parsecount+' руб');
+                }else{
+                    parsecount = count+"";
+                    parsecount = parsecount.replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g,"\$1 ");
+                    $("#cost").val(parsecount+' $');
+                }
+                $("#needs").text(getinfo.substring(0, getinfo.length - 2)); 
+          }).change();
+</script>
+</body>
+</html>
